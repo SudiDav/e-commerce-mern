@@ -17,7 +17,6 @@ const CartScreen = ({ match, location, history }) => {
   const { cartItems } = cart
 
   useEffect(() => {
-    useEffect(() => {
     if (productId) {
       dispatch(addToCart(productId, qty))
     }
@@ -105,13 +104,6 @@ const CartScreen = ({ match, location, history }) => {
       </Col>
     </Row>
   )
-  return <Row>
-      <Col md={8}>
-          <h1>Shopping cart</h1>
-      </Col>
-      <Col md={2}></Col>
-      <Col md={2}></Col>
-  </Row>
 }
 
 export default CartScreen
