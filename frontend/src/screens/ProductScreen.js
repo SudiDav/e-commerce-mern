@@ -28,6 +28,10 @@ const ProductScreen = ({ history, match }) => {
     history.push(`/cart/${match.params.id}?qty=${qty}`)
   }
 
+  const addToCartHandler = () => {
+    history.push(`/cart/${match.params.id}?qty=${qty}`)
+  }
+
   const productDetails = useSelector((state) => state.productDetails)
   const { loading, error, product } = productDetails
 
